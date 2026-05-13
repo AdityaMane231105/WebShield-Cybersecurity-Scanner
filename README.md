@@ -8,6 +8,7 @@ The system helps users protect their personal information, login credentials, an
 
 
 Key Features
+
 Real-time phishing website detection
 Machine Learning-based URL classification
 Detection of suspicious and malicious website patterns
@@ -17,6 +18,7 @@ Cybersecurity-focused solution for safer web browsing
 
 
 Technologies Used
+
 Python
 Flask
 HTML, CSS, JavaScript
@@ -26,6 +28,7 @@ Pandas & NumPy
 
 
 Working of the System
+
 User enters a website URL.
 The system extracts important URL features.
 Machine learning models analyze the URL patterns.
@@ -37,4 +40,5 @@ The result is displayed instantly with security status.
 
 
 Objective
+
 The main objective of WebShield is to provide a smart and accessible cybersecurity solution that helps users identify phishing attacks before becoming victims of online fraud or identity theft. The project aims to increase cybersecurity awareness and provide practical protection against modern phishing techniques.
