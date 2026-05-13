@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WebShield | Advanced Phishing Detection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Advanced phishing detection system protecting users from malicious websites with real-time threat analysis.">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loading-screen">
+<div class="loading-content">
+<div class="loading-spinner"></div>
+<h2>Initializing WebShield...</h2>
+<p>Securing your browsing experience</p>
+</div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+<div class="nav-container">
+
+<div class="nav-logo">
+<i class="fas fa-shield-alt"></i>
+<span>WebShield</span>
+</div>
+
+<div class="nav-menu">
+<ul>
+<li><a href="#home" class="nav-link active">Home</a></li>
+<li><a href="#features" class="nav-link">Features</a></li>
+<li><a href="#scanner" class="nav-link">Scanner</a></li>
+<li><a href="#about" class="nav-link">About</a></li>
+<li><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+</div>
+
+<button onclick="location.href='#scanner'" class="btn-primary nav-action">Try Free Scan</button>
+
+<div class="nav-toggle">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+</div>
+</nav>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero section-block">
+
+<div class="particles"></div>
+
+<div class="hero-content">
+
+<div class="hero-text animate-on-scroll">
+
+<div class="hero-topline">
+<span class="hero-pill">AI-powered threat intelligence</span>
+<span>Enterprise-grade phishing protection for modern browsing.</span>
+</div>
+
+<p class="section-eyebrow">Welcome to WebShield</p>
+<h1>
+Protect Every Click, Everywhere
+</h1>
+
+<p class="hero-tagline">
+The smarter shield for your business, browser, and digital teams.
+</p>
+
+<p class="hero-description">
+Stop phishing attacks before they reach your inbox. WebShield analyzes each URL instantly using advanced pattern recognition, domain profiling, and real-time risk scoring.
+</p>
+
+<div class="hero-stats">
+
+<div class="stat">
+<span class="stat-number">99.8%</span>
+<span class="stat-label">Detection Accuracy</span>
+</div>
+
+<div class="stat">
+<span class="stat-number">180+</span>
+<span class="stat-label">Countries Protected</span>
+</div>
+
+<div class="stat">
+<span class="stat-number">1.2M+</span>
+<span class="stat-label">Active Users</span>
+</div>
+
+</div>
+
+<div class="hero-buttons">
+
+<button onclick="location.href='#scanner'" class="btn-primary">
+<i class="fas fa-search"></i> Start Scanning
+</button>
+
+<button onclick="location.href='#features'" class="btn-secondary">
+<i class="fas fa-info-circle"></i> Learn More
+</button>
+
+</div>
+
+<div class="hero-trusted">
+<span><i class="fas fa-user-shield"></i> Trusted security teams</span>
+<span><i class="fas fa-globe"></i> 180+ countries</span>
+<span><i class="fas fa-clock"></i> 24/7 protection</span>
+</div>
+
+</div>
+
+<div class="hero-visual animate-on-scroll">
+
+<div class="visual-container">
+
+<div class="hero-images-grid">
+    <div class="hero-image-wrapper">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80" alt="Futuristic AI cybersecurity" class="hero-image" fetchpriority="high" onerror="this.onerror=null;this.src='{{ url_for('static', filename='images/hero-robot.png') }}';">
+        <div class="image-overlay"></div>
+    </div>
+    <div class="hero-image-wrapper">
+        <img src="{{ url_for('static', filename='images/hero-robot.png') }}" alt="AI cyber defense illustration" class="hero-image" fetchpriority="high">
+        <div class="image-overlay"></div>
+    </div>
+</div>
+
+<div class="shield-wrapper">
+<div class="shield-glow"></div>
+
+<div class="floating-shield">
+<i class="fas fa-shield-alt"></i>
+</div>
+
+</div>
+
+<div class="visual-description">
+
+<div class="visual-badge">
+<i class="fas fa-check-circle"></i>
+<span>Real-time Detection</span>
+</div>
+
+<div class="visual-badge">
+<i class="fas fa-zap"></i>
+<span>Lightning Fast</span>
+</div>
+
+<div class="visual-badge">
+<i class="fas fa-lock"></i>
+<span>Bank-Level Security</span>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="features-section section-block">
+
+<div class="container">
+
+<div class="section-header animate-on-scroll">
+<p class="section-eyebrow">Our Capabilities</p>
+<h2>Why Choose WebShield?</h2>
+<p class="section-subtitle">Experience the most advanced phishing detection technology available</p>
+</div>
+
+<div class="features-grid">
+
+<div class="feature-card animate-on-scroll">
+<div class="feature-icon">
+<i class="fas fa-bolt"></i>
+</div>
+<h3>Real-Time URL Scanning</h3>
+<p>Instant URL analysis with sub-second response time and comprehensive risk assessment.</p>
+</div>
+
+<div class="feature-card animate-on-scroll">
+<div class="feature-icon">
+<i class="fas fa-layer-group"></i>
+</div>
+<h3>Multi-Criteria Detection</h3>
+<p>Domain analysis, HTTPS checks, IP detection, and suspicious keyword pattern recognition.</p>
+</div>
+
+<div class="feature-card animate-on-scroll">
+<div class="feature-icon">
+<i class="fas fa-gauge-high"></i>
+</div>
+<h3>Risk Scoring System</h3>
+<p>0-100 risk score with clear LOW, MEDIUM, and HIGH threat level classifications.</p>
+</div>
+
+<div class="feature-card animate-on-scroll">
+<div class="feature-icon">
+<i class="fas fa-file-lines"></i>
+</div>
+<h3>Detailed Analysis Reports</h3>
+<p>Complete breakdown with specific reasons for each finding to help you stay informed.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">
+<i class="fas fa-code"></i>
+</div>
+<h3>REST API & Integration</h3>
+<p>Programmatic URL scanning via /api/scan for apps, scripts, and workflow integrations.</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">
+<i class="fas fa-user-shield"></i>
+</div>
+<h3>Privacy Protected</h3>
+<p>Anonymous scanning—we don't store URLs or personal data. Your privacy comes first.</p>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- SCANNER -->
+<section id="scanner" class="scanner-section section-block">
+
+<div class="container">
+
+<div class="scanner-header-wrap animate-on-scroll">
+<p class="section-eyebrow">Threat Analysis</p>
+<h2 class="scanner-main-title"><i class="fas fa-search"></i> URL Scanner</h2>
+<p class="scanner-subtitle">Enter any URL to check for phishing threats in real time</p>
+</div>
+
+<div class="scanner-container animate-on-scroll">
+
+<form method="POST" class="scanner-form" id="scanner-form" novalidate>
+
+<div class="input-group">
+
+<input type="text" name="url" id="url-input" inputmode="url" placeholder="https://example.com" autocomplete="off" value="{{ scanned_url|default('') }}" required>
+
+<button type="submit" class="scan-btn">
+<i class="fas fa-search"></i> Scan URL
+</button>
+
+</div>
+
+</form>
+
+<div id="scan-result" aria-live="polite" aria-atomic="true">
+{% if result %}
+
+<div class="result-container">
+
+<h3>Scan Results</h3>
+
+<div class="result-status {{ 'safe' if result == 'LOW' else 'warning' if result == 'MEDIUM' else 'phishing' }}">
+
+<i class="fas {{ 'fa-check-circle' if result == 'LOW' else 'fa-exclamation-triangle' if result == 'MEDIUM' else 'fa-times-circle' }}"></i>
+
+{{ 'SAFE' if result == 'LOW' else 'SUSPICIOUS' if result == 'MEDIUM' else 'PHISHING' }}
+
+</div>
+
+<div class="result-meta">
+
+<p><b>Scanned URL:</b> {{ scanned_url }}</p>
+<p><b>Risk Level:</b> {{ result }}</p>
+
+<p><b>Scan Time:</b> {{ "%.1f"|format(scan_time or 0) }} ms</p>
+
+</div>
+
+<div class="score-bar">
+<div class="score-fill" style="width: {{ score|default(0)|int }}%"></div>
+<span class="score-text">{{ score|default(0)|int }}% Risk Score</span>
+</div>
+
+{% if reasons %}
+
+<div class="reasons-list">
+
+<h4>Analysis Details:</h4>
+
+<ul>
+
+{% for reason in reasons %}
+<li>{{ reason }}</li>
+{% endfor %}
+
+</ul>
+
+</div>
+
+{% endif %}
+
+<button type="button" id="scan-another-btn" onclick="location.reload()" class="btn-secondary">
+<i class="fas fa-redo"></i> Scan Another URL
+</button>
+
+</div>
+
+{% endif %}
+
+</div>
+</div>
+
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-section section-block">
+
+<div class="container">
+
+<div class="section-header animate-on-scroll">
+<h2>What Our Users Say</h2>
+<p>Trusted by thousands of users worldwide</p>
+</div>
+
+<div class="testimonials-grid">
+
+<div class="testimonial-card animate-on-scroll">
+<div class="testimonial-content">
+<p>"WebShield has saved me from countless phishing attempts. It's an essential tool for anyone who values online security."</p>
+</div>
+<div class="testimonial-author">
+<div class="author-avatar">
+<i class="fas fa-user"></i>
+</div>
+<div class="author-info">
+<h4>Sarah Johnson</h4>
+<span>CEO, TechStart</span>
+</div>
+</div>
+</div>
+
+<div class="testimonial-card animate-on-scroll">
+<div class="testimonial-content">
+<p>"The real-time detection is incredible. WebShield caught a sophisticated phishing email that other security tools missed."</p>
+</div>
+<div class="testimonial-author">
+<div class="author-avatar">
+<i class="fas fa-user"></i>
+</div>
+<div class="author-info">
+<h4>Michael Chen</h4>
+<span>IT Security Manager</span>
+</div>
+</div>
+</div>
+
+<div class="testimonial-card animate-on-scroll">
+<div class="testimonial-content">
+<p>"Simple to use, powerful protection. WebShield gives me peace of mind when browsing online."</p>
+</div>
+<div class="testimonial-author">
+<div class="author-avatar">
+<i class="fas fa-user"></i>
+</div>
+<div class="author-info">
+<h4>Emily Davis</h4>
+<span>Digital Marketing Expert</span>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- STATISTICS -->
+<section id="statistics" class="statistics-section section-block">
+
+<div class="container">
+
+<div class="section-header animate-on-scroll">
+<h2>Our Impact in Numbers</h2>
+<p>Making the internet safer, one scan at a time</p>
+</div>
+
+<div class="stats-grid">
+
+<div class="stat-card animate-on-scroll">
+<div class="stat-icon">
+<i class="fas fa-shield-alt"></i>
+</div>
+<div class="stat-number">50M+</div>
+<div class="stat-label">URLs Scanned</div>
+</div>
+
+<div class="stat-card animate-on-scroll">
+<div class="stat-icon">
+<i class="fas fa-check-circle"></i>
+</div>
+<div class="stat-number">99.8%</div>
+<div class="stat-label">Accuracy Rate</div>
+</div>
+
+<div class="stat-card animate-on-scroll">
+<div class="stat-icon">
+<i class="fas fa-users"></i>
+</div>
+<div class="stat-number">1M+</div>
+<div class="stat-label">Active Users</div>
+</div>
+
+<div class="stat-card animate-on-scroll">
+<div class="stat-icon">
+<i class="fas fa-globe"></i>
+</div>
+<div class="stat-number">180+</div>
+<div class="stat-label">Countries</div>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section section-block">
+
+<div class="container">
+
+<div class="about-header animate-on-scroll">
+<p class="section-eyebrow">Who We Are</p>
+<h2>About WebShield</h2>
+<p class="about-subtitle">Revolutionizing Online Security with Advanced AI Detection</p>
+</div>
+
+<div class="about-content">
+
+<div class="about-text animate-on-scroll">
+
+<p class="about-intro">
+WebShield makes phishing protection easy to understand and fast to use. Our platform transforms URL risk analysis into clear, action-oriented guidance so users can browse with confidence.
+</p>
+
+<div class="about-block">
+<h3>Our Mission</h3>
+<p>
+Protect people from phishing by delivering accurate URL risk detection with simple, transparent explanations. We believe cybersecurity tools should teach as much as they defend.
+</p>
+</div>
+
+<div class="about-block">
+<h3>How WebShield Works</h3>
+<p>
+We inspect each URL across multiple threat signals: domain patterns, HTTPS validation, IP-based links, suspicious keywords, hidden subdomains, and complex query strings. The results are combined into a single 0–100 risk score with LOW, MEDIUM, or HIGH threat levels.
+</p>
+</div>
+
+<div class="about-block">
+<h3>Why WebShield?</h3>
+<p>
+Instead of leaving you guessing, WebShield explains why a link is risky. This helps students, researchers, and everyday users recognize phishing tactics and make safer decisions online.
+</p>
+</div>
+
+<div class="about-stats">
+<div class="about-stat">
+<span class="stat-number">Instant</span>
+<span class="stat-label">Risk Verdicts</span>
+</div>
+<div class="about-stat">
+<span class="stat-number">Clear</span>
+<span class="stat-label">Threat Reasons</span>
+</div>
+<div class="about-stat">
+<span class="stat-number">Private</span>
+<span class="stat-label">No URL Storage</span>
+</div>
+</div>
+
+</div>
+
+<div class="about-features animate-on-scroll">
+
+<div class="about-feature-item">
+<i class="fas fa-bolt"></i>
+<h4>Fast URL Analysis</h4>
+<p>Scan links instantly with high-performance detection built for real-time browsing.</p>
+</div>
+
+<div class="about-feature-item">
+<i class="fas fa-eye"></i>
+<h4>Transparent Scoring</h4>
+<p>Get a risk score backed by visible clues so you understand exactly why a link is flagged.</p>
+</div>
+
+<div class="about-feature-item">
+<i class="fas fa-user-shield"></i>
+<h4>Privacy First</h4>
+<p>We analyze links without storing personal data, keeping your checks secure and confidential.</p>
+</div>
+
+<div class="tech-stack">
+<div class="tech-item">
+<i class="fas fa-code"></i>
+<span>Python Flask backend</span>
+</div>
+<div class="tech-item">
+<i class="fas fa-network-wired"></i>
+<span>RESTful scan API</span>
+</div>
+<div class="tech-item">
+<i class="fas fa-mobile-screen-button"></i>
+<span>Responsive UI</span>
+</div>
+<div class="tech-item">
+<i class="fas fa-brain"></i>
+<span>Smart phishing logic</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="section-block">
+
+<div class="container">
+
+<div class="contact-header animate-on-scroll">
+<p class="section-eyebrow">Get in Touch</p>
+<h2>Contact Us</h2>
+<p class="section-subtitle">Reach out for support, partnerships, or feedback</p>
+</div>
+
+<div class="footer-content animate-on-scroll">
+
+<div class="footer-section">
+<h3>Contact Details</h3>
+
+<p>Email: adityamane104798@gmail.com</p>
+<p>Phone: +91 9643716971</p>
+<p>Location: India</p>
+
+</div>
+
+<div class="footer-section">
+<h3>Quick Links</h3>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#features">Features</a></li>
+<li><a href="#scanner">Scanner</a></li>
+<li><a href="#about">About</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 WebShield | Advanced Phishing Detection System</p>
+<p>Trending Technology Laboratory Project</p>
+</div>
+
+</div>
+
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
