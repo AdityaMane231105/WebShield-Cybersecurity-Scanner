@@ -47,7 +47,7 @@ A modern, professional web application for detecting phishing websites using adv
 
 2. **Install dependencies**
    ```bash
-   pip install flask
+   pip install -r requirements.txt
    ```
 
 3. **Run the application**
@@ -59,6 +59,13 @@ A modern, professional web application for detecting phishing websites using adv
    ```
    http://127.0.0.1:5000
    ```
+
+## Deploying to Render
+
+The repository includes a `render.yaml` Blueprint configuration. In Render, create a
+new Blueprint and connect this GitHub repository. Render will build the Flask app
+from `webshield_project`, start it with Gunicorn, and use `/health` for health
+checks. After deployment, Render will provide the public URL for the service.
 
 ## 📖 Usage
 
