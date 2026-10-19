@@ -34,4 +34,4 @@ WebShield aims to make phishing detection more accessible by helping users ident
 
 ## Repository
 
-[View the WebShield GitHub repository]([YOUR_GITHUB_REPOSITORY_URL](https://github.com/AdityaMane231105/WebShield-Cybersecurity-Scanner.git))
+[View the WebShield GitHub repository]([https://github.com/AdityaMane231105/WebShield-Cybersecurity-Scanner.git]
