@@ -1,44 +1,37 @@
-WebShield – Advanced Phishing Detection System
+# WebShield – Advanced Phishing Detection System
 
-WebShield GitHub Repository⁠�
+WebShield is an AI-powered phishing detection system that analyzes website URLs and identifies potentially malicious sites. Its web interface provides quick results to help users avoid phishing scams and protect their personal information, login credentials, and financial data.
 
-WebShield is an AI-powered phishing detection system designed to identify and prevent malicious websites and fraudulent URLs in real time. The project focuses on improving online security by analyzing website URLs, detecting suspicious patterns, and classifying websites as safe or phishing using machine learning techniques.
+## Features
 
-The system helps users protect their personal information, login credentials, and financial data from cyber threats by providing instant phishing detection results through an easy-to-use web interface.
+- Real-time phishing detection
+- Machine learning-based URL classification
+- Analysis of suspicious URL patterns
+- Simple web interface for checking URLs
+- Fast prediction results
+- Clear classification as **Safe**, **Suspicious**, or **Phishing**
 
+## Technologies
 
-Key Features
+- Python
+- Flask
+- HTML, CSS, and JavaScript
+- Scikit-learn
+- Pandas
+- NumPy
 
-Real-time phishing website detection
-Machine Learning-based URL classification
-Detection of suspicious and malicious website patterns
-User-friendly web interface for easy URL checking
-Fast and accurate prediction system
-Cybersecurity-focused solution for safer web browsing
+## How It Works
 
+1. The user enters a website URL.
+2. WebShield extracts relevant features from the URL.
+3. Machine learning models analyze those features.
+4. The system classifies the URL as **Safe**, **Suspicious**, or **Phishing**.
+5. The result is displayed in the web interface.
 
-Technologies Used
+## Objective
 
-Python
-Flask
-HTML, CSS, JavaScript
-Machine Learning Algorithms
-Scikit-learn
-Pandas & NumPy
+WebShield aims to make phishing detection more accessible by helping users identify suspicious websites before sharing sensitive information. It also supports greater awareness of online security threats.
 
+## Repository
 
-Working of the System
-
-User enters a website URL.
-The system extracts important URL features.
-Machine learning models analyze the URL patterns.
-The website is classified as:
-Safe Website
-Suspicious Website
-Phishing Website
-The result is displayed instantly with security status.
-
-
-Objective
-
-The main objective of WebShield is to provide a smart and accessible cybersecurity solution that helps users identify phishing attacks before becoming victims of online fraud or identity theft. The project aims to increase cybersecurity awareness and provide practical protection against modern phishing techniques.
+[View the WebShield GitHub repository](YOUR_GITHUB_REPOSITORY_URL)
